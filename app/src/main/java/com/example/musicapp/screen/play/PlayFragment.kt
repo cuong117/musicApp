@@ -1,7 +1,5 @@
 package com.example.musicapp.screen.play
 
-import android.animation.Animator
-import android.content.Context
 import android.media.MediaMetadataRetriever
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -32,22 +30,6 @@ class PlayFragment: BaseFragment() {
     ): View {
         binding = PlayFragmentBinding.inflate(layoutInflater)
         return binding.root
-    }
-
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-    }
-
-    override fun onDetach() {
-        super.onDetach()
-    }
-
-    override fun onViewStateRestored(savedInstanceState: Bundle?) {
-        super.onViewStateRestored(savedInstanceState)
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
     }
     override fun initView() {
         if (mActivity.isServiceBound){
